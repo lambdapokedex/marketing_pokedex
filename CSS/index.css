@@ -7,3 +7,9 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+header h2 {
+    color: red;
+    display: flex;
+    justify-content: center;
+}
