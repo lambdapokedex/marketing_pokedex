@@ -127,7 +127,10 @@ table {
   border-spacing: 0;
 }
 body {
-  background-color: #f7dba7;
+  background-image: url('../Img/backgroundwithimages.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header h1 {
   color: #ef626c;
