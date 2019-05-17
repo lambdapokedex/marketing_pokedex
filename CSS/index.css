@@ -130,7 +130,7 @@ table {
   font-size: 62.5%;
 }
 :root body {
-  background-image: url("../Img/backgroundwithimages.png");
+  background-image: url("../Img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -158,8 +158,27 @@ nav h1 {
   color: black;
   margin: 2.5rem;
 }
-footer {
-  color: white;
+.pics {
+  display: flex;
+  -webkit-transform: scale(0.65);
+  /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.65);
+  /* FF3.5+ */
+  -ms-transform: scale(0.65);
+  /* IE9 */
+  -o-transform: scale(0.65);
+  /* Opera 10.5+ */
+  transform: scale(0.65);
+  /* IE6–IE9 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99996192, M12=-0.00872654, M21=0.00872654, M22=0.99996192, SizingMethod='auto expand');
+}
+@media (max-width: 500px) {
+  .pics #pic1 {
+    display: none;
+  }
+  .pics #pic3 {
+    display: none;
+  }
 }
 .header {
   width: 100%;
