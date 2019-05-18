@@ -5,6 +5,14 @@
     <link rel="icon" href="img/pokedex-icon-6.jpg" />
     <link href="CSS/features.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
+
+
     <script src="js/menu.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <STYLE>A {text-decoration: none;} </STYLE>
@@ -21,29 +29,86 @@
         <li>Features</li>
       </ul>
     </div>
-    <div class = 'pageContent'>
-      <div class = 'comingSoon'>
+    <div class="pageContent">
+      <div class="comingSoon">
         <h2>Features</h2>
-        <img class = 'pokeball' />
+        <img class="pokeball" src='./FeaturesAssets/pokeball_header.png' />
         <h3>Coming Soon</h3>
       </div>
-      <div class = 'pokeDex'>
-        <img class = 'litten' src = './Img/725-Litten.png'/>
-        <div class = 'featureCard'>
+      <div class="pokeDex">
+        <img class="litten" src="./Img/725-Litten.png" />
+        <div class="featureCard">
           <p>
-              Pokem ipsum dolor sit amet Venipede Clefairy Snorlax Pokemon, it's you and me Spearow Lopunny. Ash I'm on the road to Viridian City Jirachi Slugma Smoochum Flamethrower Calcium. Pokemon 4Ever Magmar Burnt Berry Aipom Magikarp used Splash Abomasnow Charmeleon. Ut enim ad minim veniam Qwilfish Vigoroth Jellicent Grotle Giratina Cherrim. Sapphire Electrode Unown Soul Badge Finneon Youngster wants to fight Metagross. 
-
-              Normal Swift Garchomp Togepi Meloetta Crobat the enemy Pokemon fainted. Dig Viridian City Cofagrigus Soul Badge Foongus Kricketot I'm on the road to Viridian City. Electric Ralts Snover Maractus S.S. Anne Meowth Cyndaquil. Excepteur sint occaecat cupidatat non proident Cherubi Flygon Porygon2 Gothorita Beautifly Elgyem. Venusaur Camerupt Electric ullamco laboris nisi Finneon Heatran Taillow.        
+            Pokem ipsum dolor sit amet Venipede Clefairy Snorlax Pokemon, it's
+            you and me Spearow Lopunny. Ash I'm on the road to Viridian City
+            Jirachi Slugma Smoochum Flamethrower Calcium. Pokemon 4Ever Magmar
+            Burnt Berry Aipom Magikarp used Splash Abomasnow Charmeleon. Ut enim
+            ad minim veniam Qwilfish Vigoroth Jellicent Grotle Giratina Cherrim.
+            Sapphire Electrode Unown Soul Badge Finneon Youngster wants to fight
+            Metagross. Normal Swift Garchomp Togepi Meloetta Crobat the enemy
+            Pokemon fainted. Dig Viridian City Cofagrigus Soul Badge Foongus
+            Kricketot I'm on the road to Viridian City. Electric Ralts Snover
+            Maractus S.S. Anne Meowth Cyndaquil. Excepteur sint occaecat
+            cupidatat non proident Cherubi Flygon Porygon2 Gothorita Beautifly
+            Elgyem. Venusaur Camerupt Electric ullamco laboris nisi Finneon
+            Heatran Taillow.
           </p>
         </div>
-        <img class = 'tCat' src = './Img/726-Torracat.png' />
+        <img class="tCat" src="./Img/726-Torracat.png" />
       </div>
-      <div class = 'demo'>
-        <div class = 'cards'>
-
-        </div>
-      </div>
+      <div class="demo">
+          <div class='card' data-tab='dex'>
+            <div class = 'cardName'>725: Litten</div>
+            <div class ='pokemon'>
+              <div class='pokeImg'>
+                <img src = './FeaturesAssets/littenSprite.png' />
+              </div>
+              <span class = 'stats'>
+                Height: 1'04"
+                Weight: 9.5lbs
+                Gender: M or F
+                Category: Fire Cat
+                Abilities: Blaze
+              </span>
+            </div>
+          </div>
+          <div class="cards">
+              <div class='card' data-tab='dex'>
+                <div class = 'cardName'>726: Torracat</div>
+                <div class ='pokemon'>
+                  <div class='pokeImg'>
+                    <img src = './FeaturesAssets/tCatSprite.png' />
+                  </div>
+                  <span class = 'stats'>
+                    Height: 2'04"
+                    Weight: 55.1 lbs
+                    Gender: M or F
+                    Category: Fire Cat
+                    Abilities: Blaze
+                  </span>
+                </div>
+              </div>
+            </div>
+          <div class="cards">
+            <div class='card' data-tab='dex'>
+              <div class = 'cardName'>727: Incineroar</div>
+              <div class ='pokemon'>
+                <div class='pokeImg'>
+                  <img src = './FeaturesAssets/incerSprite.png' />
+                </div>
+                <span class = 'stats'>
+                  Height: 5'11"
+                  Weight: 183 lbs
+                  Gender: M or F
+                  Category: Heel
+                  Abilities: Blaze
+                </span>
+              </div>
+            </div>
+          </div>
     </div>
-    <footer>Copyright & Copy 2019</footer>
+    <footer><p>Copyright & Copy 2019</p></footer>
   </body>
 </html>
+        
+     
