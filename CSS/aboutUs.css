@@ -180,10 +180,32 @@ nav h1 {
     display: none;
   }
 }
+#titlepic {
+  height: 80%;
+}
+.maincontent1 {
+  display: flex;
+  margin-top: 100px;
+}
+.maincontent2 {
+  margin-top: 100px;
+  display: inline-block;
+}
+.maincontent2 h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 50px;
+}
+.maincontent2 p {
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+.maincontent2 img {
+  width: 400px;
+}
 .header {
   width: 100%;
-  height: 75px;
-  background-color: #444047;
+  height: 100px;
+  background-color: #463232;
   color: #f6e8ea;
   display: flex;
   justify-content: flex-start;
