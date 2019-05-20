@@ -10,23 +10,22 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
-
 
     <script src="js/menu.js" async></script>
+    <script src="js/features.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <STYLE>A {text-decoration: none;} </STYLE>
+    <STYLE>a {text-decoration: none;} </STYLE>
   </head>
   <body>
     <div class="header">
       <img class="menu-button" src="./Img/menu.png" />
-      <h1>PokeDextrous</h1>
+      <img class='logo' src ='./FeaturesAssets/new_logo.png'>
     </div>
     <div class="menu">
       <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Features</li>
+        <li><a href = 'index.html'>Home</a></li>
+        <li><a href = 'aboutUs.html'>About Us</a></li>
+        <li><a href = 'Features.html'>Features</a></li>
       </ul>
     </div>
     <div class="pageContent">
@@ -38,76 +37,63 @@
       <div class="pokeDex">
         <img class="litten" src="./Img/725-Litten.png" />
         <div class="featureCard">
-          <p>
-            Pokem ipsum dolor sit amet Venipede Clefairy Snorlax Pokemon, it's
-            you and me Spearow Lopunny. Ash I'm on the road to Viridian City
-            Jirachi Slugma Smoochum Flamethrower Calcium. Pokemon 4Ever Magmar
-            Burnt Berry Aipom Magikarp used Splash Abomasnow Charmeleon. Ut enim
-            ad minim veniam Qwilfish Vigoroth Jellicent Grotle Giratina Cherrim.
-            Sapphire Electrode Unown Soul Badge Finneon Youngster wants to fight
-            Metagross. Normal Swift Garchomp Togepi Meloetta Crobat the enemy
-            Pokemon fainted. Dig Viridian City Cofagrigus Soul Badge Foongus
-            Kricketot I'm on the road to Viridian City. Electric Ralts Snover
-            Maractus S.S. Anne Meowth Cyndaquil. Excepteur sint occaecat
-            cupidatat non proident Cherubi Flygon Porygon2 Gothorita Beautifly
-            Elgyem. Venusaur Camerupt Electric ullamco laboris nisi Finneon
-            Heatran Taillow.
-          </p>
+            <li>Pokem ipsum dolor sit amet Venipede Clefairy Snorlax Pokemon</li>
+            <li>you and me Spearow Lopunny. Ash I'm on the road to Viridian City</li>
+            <li>Jirachi Slugma Smoochum Flamethrower Calcium. Pokemon 4Ever Magmar</li>
+            <li>Burnt Berry Aipom Magikarp used Splash Abomasnow Charmeleon. Ut enim</li>
+            <li>ad minim veniam Qwilfish Vigoroth Jellicent Grotle Giratina Cherrim.</li>
+            <li>Sapphire Electrode Unown Soul Badge Finneon Youngster wants to fight</li>
         </div>
         <img class="tCat" src="./Img/726-Torracat.png" />
       </div>
-      <div class="demo">
+      <div class="demo">          
+        <div class="cards">
           <div class='card' data-tab='dex'>
-            <div class = 'cardName'>725: Litten</div>
-            <div class ='pokemon'>
-              <div class='pokeImg'>
-                <img src = './FeaturesAssets/littenSprite.png' />
-              </div>
-              <span class = 'stats'>
-                Height: 1'04"
-                Weight: 9.5lbs
-                Gender: M or F
-                Category: Fire Cat
-                Abilities: Blaze
+              <img class = 'pokeImg' src = './FeaturesAssets/littenSprite.png' />
+              <img class='cardBack' src= './FeaturesAssets/cardBack.png' />
+              <div class = 'info'>
+                <h4><b>725: Litten</b></h4>
+                <span class = 'stats'>
+                  <p>Height: 1'04"</p>
+                  <p>Weight: 9.5lbs</p>
+                  <p>Gender: M or F</p>
+                  <p>Category: Fire Cat</p>
+                  <p>Abilities: Blaze</p>
               </span>
+              </div>
+          </div>
+          <div class='card' data-tab='dex'>
+            <img class = 'pokeImg' src = './FeaturesAssets/tCatSprite.png' />
+            <img class='cardBack' src= './FeaturesAssets/cardBack.png' />
+            <div class = 'info'>
+              <h4><b>726: Torracat</b></h4>
+                  <span class = 'stats'>
+                    <p>Height: 2'04"</p>
+                    <p>Weight: 55.1 lbs</p>
+                    <p>Gender: M or F</p>
+                    <p>Category: Fire Cat</p>
+                    <p>Abilities: Blaze</p>
+                  </span>
             </div>
           </div>
-          <div class="cards">
-              <div class='card' data-tab='dex'>
-                <div class = 'cardName'>726: Torracat</div>
-                <div class ='pokemon'>
-                  <div class='pokeImg'>
-                    <img src = './FeaturesAssets/tCatSprite.png' />
-                  </div>
-                  <span class = 'stats'>
-                    Height: 2'04"
-                    Weight: 55.1 lbs
-                    Gender: M or F
-                    Category: Fire Cat
-                    Abilities: Blaze
-                  </span>
-                </div>
-              </div>
-            </div>
-          <div class="cards">
-            <div class='card' data-tab='dex'>
-              <div class = 'cardName'>727: Incineroar</div>
-              <div class ='pokemon'>
-                <div class='pokeImg'>
-                  <img src = './FeaturesAssets/incerSprite.png' />
-                </div>
-                <span class = 'stats'>
-                  Height: 5'11"
-                  Weight: 183 lbs
-                  Gender: M or F
-                  Category: Heel
-                  Abilities: Blaze
+          <div class='card' data-tab='dex'>
+            <img class = 'pokeImg' src = './FeaturesAssets/incerSprite.png' />
+            <img class='cardBack' src= './FeaturesAssets/cardBack.png' />
+            <div class = 'info'>
+            <h4><b>727: Incineroar</b></h4>
+            <span class = 'stats'>
+                  <p>Height: 5'11"</p>
+                  <p>Weight: 183 lbs</p>
+                  <p>Gender: M or F</p>
+                  <p>Category: Heel</p>
+                  <p>Abilities: Blaze</p>
                 </span>
               </div>
-            </div>
           </div>
-    </div>
-    <footer><p>Copyright & Copy 2019</p></footer>
+        </div>
+      </div>
+    <footer><p>Copyright & Copy 2019</p></footer>    
+  </div>
   </body>
 </html>
         

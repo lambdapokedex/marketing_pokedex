@@ -126,26 +126,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #444047;
 }
 .pageContent {
-  margin-top: 75px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 75px auto;
-  margin-bottom: 0;
+  margin: 0 auto;
+  width: 100%;
 }
 .comingSoon {
+  margin-top: 4.5rem;
   display: flex;
-  max-width: 100%;
-  height: 5rem;
-  padding: 0 20px 25px;
   border: 1px solid lightgrey;
   border-radius: 2px;
   background-color: whitesmoke;
@@ -161,7 +161,10 @@ h2 {
 }
 .pokeDex {
   display: flex;
-  max-width: 100%;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #444047;
   padding: 0 20px 25px;
   border: 1px solid lightgrey;
@@ -170,19 +173,19 @@ h2 {
   box-shadow: 2px 2px 2px lightgrey;
   margin: 0 auto;
 }
-.pokeDex .litten {
-  max-width: 100%;
-  display: block;
-  height: auto;
+.pokeDex .featureCard {
+  height: 100%;
+  padding: 0 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  position: relative;
 }
-.pokeDex .tcat {
-  max-width: 100%;
-  display: block;
-  height: auto;
+.pokeDex .featureCard li {
+  list-style-type: none;
 }
-.demo {
+.cards {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
@@ -194,24 +197,35 @@ h2 {
   box-shadow: 2px 2px 2px lightgrey;
   margin-bottom: 1px;
   margin: 0 auto;
-  width: 100%;
 }
 .card {
   display: flex;
-  flex-direction: column;
-  border: 1px double red;
-  border-radius: 5px;
-  background-color: #f6e8ea;
-  max-width: 250px;
-  padding: 10px 10px;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
 }
-.card img {
+.card .pokeImg {
+  display: none;
+  border-radius: 5px 5px 0 0;
+}
+.card :hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card .info {
+  display: none;
+  padding: 5px 20px;
+}
+.flipped .pokeImg {
   display: block;
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  border: 1px dotted #444047;
+}
+.flipped .info {
+  display: block;
+}
+.flipped .cardBack {
+  display: none;
 }
 footer {
   display: flex;
@@ -255,13 +269,12 @@ footer p {
 .menu {
   display: none;
   position: fixed;
-  top: 75px;
+  top: 4.4rem;
   right: 0;
-  width: 350px;
+  width: 35rem;
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #444047;
-  border: 1px solid #f6e8ea;
   border-left: none;
   border-bottom: none;
   z-index: 2;
@@ -272,7 +285,10 @@ footer p {
   font-size: 3.2rem;
   padding: 30px 0;
   text-align: center;
-  color: #ef626c;
+  color: red;
+}
+.menu li a {
+  color: red;
 }
 .menu--open {
   display: block;
