@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <STYLE>a {text-decoration: none;} </STYLE>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="js/menu.js" async></script>
+    <script src="./JS/menu.js" async></script>
   </head>
-  
+
   <body>
     <div class="header">
       <img class="menu-button" src="./Img/menu.png" />
-      <a href ='index.html'><img class='logo' src ='./FeaturesAssets/new_logo.png'></a>
+      <a href="index.html"
+        ><img class="logo" src="./FeaturesAssets/new_logo.png"
+      /></a>
     </div>
     <div class="menu">
       <ul>
@@ -22,11 +24,24 @@
         <li><a href="features.html">Features</a></li>
       </ul>
     </div>
-    <div class="pics">
-      <img id="pic1" src="./Img/eevee.png" />
-      <img id="pic2" src="./Img/pika.png" />
-      <img id="pic3" src="./Img/squirtle.png" />
+    <div class="pageContent">
+      <div class="comingSoon">
+        <img class="features1" src="./FeaturesAssets/signUp.png" />
+        <img class="pokeball" src="./FeaturesAssets/pokeball_header.png" />
+        <img class="features2" src="./FeaturesAssets/comingSoon.png" />
+      </div>
+      <div class="cta">
+        <div class="buttonSection">
+          <button><img id ='ctaBtn' src = './Img/ctaBtn.png'/></button>
+          <img id="pokeBall" src="./Img/pokeball.png" />
+        </div>
+        <div class="pics">
+          <img id="pic1" src="./Img/eevee.png" />
+          <img id="pic2" src="./Img/pika.png" />
+          <img id="pic3" src="./Img/squirtle.png" />
+        </div>
+      </div>
+      <footer><p>Copyright & Copy 2019</p></footer>
     </div>
-    <footer>Copyright & Copy 2019</footer>
   </body>
 </html>

@@ -15,8 +15,3 @@ const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
     return new Card(card);
 });
-
-/// -- For PokeDex section 
-
-const list = document.querySelectorAll('.featureCard li');
-//console.log(list);
