@@ -129,6 +129,9 @@ table {
 * {
   box-sizing: border-box;
 }
+:root {
+  font-size: 62.5%;
+}
 html,
 body {
   width: 100%;
@@ -319,6 +322,7 @@ footer p {
   display: none;
   position: fixed;
   top: 4.4rem;
+  margin-top: 3rem;
   right: 0;
   width: 20rem;
   height: 100vh;
@@ -342,6 +346,10 @@ footer p {
 }
 .menu li a {
   color: #FF4844;
+}
+.menu li a :hover {
+  color: #463232;
+  background-color: #FF4844;
 }
 .menu--open {
   display: block;
