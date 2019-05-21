@@ -343,6 +343,10 @@ footer p {
 .menu li a {
   color: #FF4844;
 }
+.menu li a :hover {
+  color: #463232;
+  background-color: #FF4844;
+}
 .menu--open {
   display: block;
 }
