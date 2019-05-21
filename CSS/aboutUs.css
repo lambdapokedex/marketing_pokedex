@@ -129,39 +129,6 @@ table {
 * {
   box-sizing: border-box;
 }
-:root {
-  font-size: 62.5%;
-}
-body {
-  background-image: url("../Img/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.pics {
-  display: flex;
-  -webkit-transform: scale(0.65);
-  /* Saf3.1+, Chrome */
-  -moz-transform: scale(0.65);
-  /* FF3.5+ */
-  -ms-transform: scale(0.65);
-  /* IE9 */
-  -o-transform: scale(0.65);
-  /* Opera 10.5+ */
-  transform: scale(0.65);
-  /* IE6–IE9 */
-  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99996192, M12=-0.00872654, M21=0.00872654, M22=0.99996192, SizingMethod='auto expand');
-}
-@media (max-width: 500px) {
-  .pics #pic1 {
-    display: none;
-  }
-  .pics #pic3 {
-    display: none;
-  }
-}
-#titlepic {
-  height: 80%;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -283,7 +250,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -296,7 +263,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
@@ -305,29 +272,41 @@ h4,
 h5 {
   font-size: 18px;
   margin-bottom: 15px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 p {
   line-height: 1.4;
 }
-.all-sections {
-  margin: 40px 10px 40px 10px;
+:root {
+  font-size: 62.5%;
+}
+.about {
+  background-image: url("../Img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 5rem;
+}
+p {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+.about {
+  margin-top: 10rem;
+}
+.designers {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
-.strategy {
-  order: 1;
-  flex-grow: 1;
-  flex-direction: column;
-  width: 48%;
-  align-items: stretch;
+.angela {
+  display: flex;
+  flex-flow: column wrap;
 }
-.how-work {
-  order: 1;
-  flex-grow: 1;
-  flex-direction: column;
-  width: 48%;
-  align-items: stretch;
+.ian {
+  display: flex;
+  flex-flow: column wrap;
 }
 button {
   font-size: 18px;
@@ -339,20 +318,6 @@ button {
   border-top: 2px dashed #322f32;
   background: none;
   height: 0;
-}
-#testpic {
-  width: 70%;
-  max-height: 275px;
-}
-h1 {
-  font-family: 'Abel', sans-serif;
-  font-size: 50px;
-  width: 40%;
-}
-p {
-  font-size: 25px;
-  font-family: 'Open Sans', sans-serif;
-  width: 40%;
 }
 .header {
   width: 100%;
