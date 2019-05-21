@@ -340,10 +340,6 @@ button {
   background: none;
   height: 0;
 }
-#testpic {
-  width: 70%;
-  max-height: 275px;
-}
 h1 {
   font-family: 'Abel', sans-serif;
   font-size: 50px;
