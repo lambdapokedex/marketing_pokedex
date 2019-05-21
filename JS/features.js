@@ -1,16 +1,17 @@
-const flipCard = function (i) {
-    i.classList.add('flipped');
+
+class Card {
+    constructor(card) {
+        this.card = card;
+        this.card.addEventListener('click', () => this.flip());
+    }
+
+    flip() {
+        this.card.classList.toggle('flipped');
+    }
 }
 
-const thisCard = function(i) {
-    flipCard(i);
-}
+const cards = document.querySelectorAll('.card');
 
-const Card = document.querySelectorAll('.card');
-
-const cards = Card.forEach(function(i) {
-    i.addEventListener('click', thisCard(i));
-    i.classList.remove('flipped');
+cards.forEach(card => {
+    return new Card(card);
 });
-
-//console.log(Card);
