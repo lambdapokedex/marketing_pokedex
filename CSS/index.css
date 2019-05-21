@@ -132,34 +132,10 @@ table {
 :root {
   font-size: 62.5%;
 }
-:root body {
+body {
   background-image: url("../Img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.header h1 {
-  color: #ef626c;
-  display: flex;
-  justify-content: center;
-}
-.header h2 {
-  color: #ef626c;
-  display: flex;
-  justify-content: center;
-}
-nav {
-  display: flex;
-}
-nav a {
-  font-size: 3rem;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-}
-nav h1 {
-  font-size: 5rem;
-  color: black;
-  margin: 2.5rem;
 }
 .pics {
   display: flex;
@@ -176,10 +152,10 @@ nav h1 {
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99996192, M12=-0.00872654, M21=0.00872654, M22=0.99996192, SizingMethod='auto expand');
 }
 @media (max-width: 500px) {
-  .pics #pic1 {
+  #pic1 {
     display: none;
   }
-  .pics #pic3 {
+  #pic3 {
     display: none;
   }
 }
@@ -210,6 +186,7 @@ nav h1 {
   display: none;
   position: fixed;
   top: 4.4rem;
+  margin-top: 3rem;
   right: 0;
   width: 20rem;
   height: 100vh;
