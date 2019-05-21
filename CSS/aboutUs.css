@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
 :root {
   font-size: 62.5%;
 }
@@ -185,22 +188,27 @@ nav h1 {
 }
 .maincontent1 {
   display: flex;
-  margin-top: 100px;
+  margin-top: 150px;
+  width: 70%;
+  height: 400px;
+  justify-content: center;
 }
-.maincontent2 {
-  margin-top: 100px;
-  display: inline-block;
+.maincontent1 img {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  max-height: 275px;
+  margin-left: 100px;
+  border: 5px solid #f6e8ea;
 }
-.maincontent2 h1 {
+h1 {
   font-family: 'Abel', sans-serif;
   font-size: 50px;
 }
-.maincontent2 p {
+p {
   font-size: 25px;
   font-family: 'Open Sans', sans-serif;
-}
-.maincontent2 img {
-  width: 400px;
+  width: 40%;
 }
 .header {
   width: 100%;
@@ -228,13 +236,12 @@ nav h1 {
 .menu {
   display: none;
   position: fixed;
-  top: 75px;
+  top: 4.4rem;
   right: 0;
-  width: 350px;
+  width: 35rem;
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #444047;
-  border: 1px solid #f6e8ea;
   border-left: none;
   border-bottom: none;
   z-index: 2;
@@ -245,7 +252,10 @@ nav h1 {
   font-size: 3.2rem;
   padding: 30px 0;
   text-align: center;
-  color: #ef626c;
+  color: red;
+}
+.menu li a {
+  color: red;
 }
 .menu--open {
   display: block;
