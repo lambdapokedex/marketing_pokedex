@@ -132,32 +132,62 @@ table {
 :root {
   font-size: 62.5%;
 }
-body {
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.comingSoon {
+  margin-top: 4.5rem;
+  display: flex;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  position: relative;
+  box-shadow: 2px 2px 2px lightgrey;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.comingSoon .features1 {
+  margin-top: 40px;
+}
+.comingSoon .features2 {
+  margin-top: 45px;
+}
+.cta {
   background-image: url("../Img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.pics {
   display: flex;
-  -webkit-transform: scale(0.65);
-  /* Saf3.1+, Chrome */
-  -moz-transform: scale(0.65);
-  /* FF3.5+ */
-  -ms-transform: scale(0.65);
-  /* IE9 */
-  -o-transform: scale(0.65);
-  /* Opera 10.5+ */
-  transform: scale(0.65);
-  /* IE6–IE9 */
-  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99996192, M12=-0.00872654, M21=0.00872654, M22=0.99996192, SizingMethod='auto expand');
+  flex-flow: column wrap;
+  align-items: center;
 }
-@media (max-width: 500px) {
-  #pic1 {
-    display: none;
-  }
-  #pic3 {
-    display: none;
-  }
+.cta .buttonSection {
+  display: flex;
+  flex-flow: row wrap;
+}
+.cta .buttonSection button {
+  background: none;
+  border: none;
+}
+.cta .pics {
+  display: flex;
+  flex-flow: row nowrap;
+}
+footer {
+  display: flex;
+  background-color: #463232;
+  max-width: 100%;
+  padding-top: 2px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px lightgrey;
+  height: 20px;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   width: 100%;
