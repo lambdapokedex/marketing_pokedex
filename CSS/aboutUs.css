@@ -132,34 +132,32 @@ table {
 :root {
   font-size: 62.5%;
 }
-:root body {
+body {
   background-image: url("../Img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header h1 {
-  color: #ef626c;
+.pics {
   display: flex;
-  justify-content: center;
+  -webkit-transform: scale(0.65);
+  /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.65);
+  /* FF3.5+ */
+  -ms-transform: scale(0.65);
+  /* IE9 */
+  -o-transform: scale(0.65);
+  /* Opera 10.5+ */
+  transform: scale(0.65);
+  /* IE6–IE9 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99996192, M12=-0.00872654, M21=0.00872654, M22=0.99996192, SizingMethod='auto expand');
 }
-.header h2 {
-  color: #ef626c;
-  display: flex;
-  justify-content: center;
-}
-nav {
-  display: flex;
-}
-nav a {
-  font-size: 3rem;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-}
-nav h1 {
-  font-size: 5rem;
-  color: black;
-  margin: 2.5rem;
+@media (max-width: 500px) {
+  .pics #pic1 {
+    display: none;
+  }
+  .pics #pic3 {
+    display: none;
+  }
 }
 #titlepic {
   height: 80%;
@@ -383,6 +381,7 @@ p {
   display: none;
   position: fixed;
   top: 4.4rem;
+  margin-top: 3rem;
   right: 0;
   width: 20rem;
   height: 100vh;
@@ -406,6 +405,10 @@ p {
 }
 .menu li a {
   color: #FF4844;
+}
+.menu li a :hover {
+  color: #463232;
+  background-color: #FF4844;
 }
 .menu--open {
   display: block;
