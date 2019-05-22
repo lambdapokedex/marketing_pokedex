@@ -333,17 +333,22 @@ p{
 
 footer {
   display: flex;
+  flex-flow: column nowrap;
   background-color: @brown;
   max-width: 100%;
   padding-top: 2px;
   border: 1px solid lightgrey;
   border-radius: 2px;
   box-shadow: 2px 2px 2px lightgrey;
-  height: 20px;
-  position: absolute;
+  height: 30px;
+  //position: absolute;
   bottom: 0;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+
+  li {
+    list-style-type: none;
+  }
 }
 
 .bottomsection {
@@ -361,4 +366,77 @@ footer {
 
 #lambdapic {
   width: 30%;
+}
+
+// .page {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.comingSoon {
+  // margin: 20px 10%;
+  margin-top: 4.5rem;
+  display: flex;
+  // width: 100%;
+  // height: 5rem;
+  // padding: 0 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  position: relative;
+  box-shadow: 2px 2px 2px lightgrey;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .features1 {
+    margin-top: 40px;
+  }
+
+  .features2 {
+    margin-top: 45px;
+  }
+}
+
+.banner {
+  height: 150px;
+  background-image: url("../FeaturesAssets/trainer_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media @tablet {
+  .comingSoon {
+    .features2 {
+      display: none;
+    }
+  }
+
+
+  .banner {
+    height: 109px;
+    background-image: url("../FeaturesAssets/trainer_banner_tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media @phone {
+  .comingSoon {
+    .features1 {
+      display: none;
+    }
+    .features2 {
+      display: none;
+    }
+  }
+
+  .banner {
+    height: 62px;
+    background-image: url("../FeaturesAssets/trainer_banner_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
