@@ -291,7 +291,7 @@ footer li {
     background-size: cover;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .comingSoon .features1 {
     display: none;
   }
