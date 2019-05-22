@@ -264,18 +264,36 @@ p {
 
 
 .all-sections {
-  margin: 90px 10px 20px 10px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.authors{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .strategy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   order: 1;
   flex-grow: 1;
   flex-direction: column;
-  width: 48%;
-  align-items: stretch;
+  //width: 48%;
   margin-left: 25px;
+
+  img {
+    max-width: 350px;
+    max-height: 350px;
+  }
 
   @media @phone {
     margin-left: 10px;
@@ -286,12 +304,18 @@ p {
 }
 
 .how-work {
+  display: flex;
   order: 1;
   flex-grow: 1;
   flex-direction: column;
-  width: 48%;
-  align-items: stretch;
+  justify-content: center;
+  //width: 48%;
+  align-items: center;
  
+  img {
+    max-height: 350px;
+    max-width: 350px;
+  }
 }
 
 button {
@@ -310,8 +334,8 @@ button {
 } 
 
 #testpic {
-width: 65%;
-  max-height: 275px;
+//width: 65%;
+  //max-height: 275px;
   border:5px solid @red;
 }
 
@@ -356,12 +380,18 @@ footer {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  border: 3px solid black;
-  width: 70%;
-  background: @offWhite;
+  border: 1px solid lightgrey;
+  width: 100%;
+  background: whitesmoke;
+  box-shadow: 2px 2px 2px lightgrey;
   // margin: 0 0 0 50px;
-  margin: 20px 0 10px 50px;
+  margin: 0 auto;
   padding: 10px;
+
+  h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 2rem;
+  }
 }
 
 #lambdapic {
