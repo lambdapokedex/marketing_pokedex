@@ -297,7 +297,7 @@ body {
   /* IE6–IE9 */
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99996192, M12=-0.00872654, M21=0.00872654, M22=0.99996192, SizingMethod='auto expand');
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .pics #pic1 {
     display: none;
   }
@@ -469,7 +469,7 @@ p {
   align-items: stretch;
   margin-left: 25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .strategy {
     margin-left: 10px;
   }
@@ -506,9 +506,8 @@ button {
 h1 {
   font-family: 'Abel', sans-serif;
   font-size: 35px;
-  width: 40%;
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   h1 {
     font-size: 30px;
   }
@@ -534,9 +533,17 @@ footer {
 }
 .bottomsection {
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border: 3px solid black;
+  width: 70%;
+  background: #f6e8ea;
+  margin: 20px 0 10px 50px;
+  padding: 10px;
 }
 #lambdapic {
-  width: 35%;
+  width: 30%;
 }
 .header {
   width: 100%;
