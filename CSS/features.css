@@ -201,8 +201,9 @@ h2 {
   margin-top: 15px;
 }
 .pokeDex .featureCard li {
-  font-size: 0.8rem;
   list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
 }
 .cards {
   display: flex;
@@ -265,6 +266,7 @@ footer {
 }
 footer li {
   list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 880px) {
   .comingSoon .features1 {

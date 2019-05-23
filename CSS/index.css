@@ -198,6 +198,7 @@ footer {
 }
 footer li {
   list-style-type: none;
+  font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 880px) {
   .comingSoon .features1 {

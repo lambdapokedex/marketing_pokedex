@@ -149,7 +149,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -328,7 +327,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -429,7 +427,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -438,20 +436,6 @@ table {
 }
 * {
   box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-family: 'Rubik', sans-serif;
 }
 p {
   line-height: 1.4;
@@ -515,7 +499,7 @@ button {
   border: 5px solid #FF4844;
 }
 h1 {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 35px;
 }
 @media (max-width: 520px) {
@@ -525,7 +509,7 @@ h1 {
 }
 p {
   font-size: 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 40%;
 }
 footer {
@@ -544,6 +528,7 @@ footer {
 }
 footer li {
   list-style-type: none;
+  font-family: "Open Sans", sans-serif;
 }
 .bottomsection {
   display: flex;
@@ -558,7 +543,7 @@ footer li {
   padding: 10px;
 }
 .bottomsection h2 {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 2rem;
 }
 #lambdapic {
