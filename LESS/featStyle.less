@@ -10,41 +10,11 @@ body {
 }
 
 .pageContent {
-  //margin-top: 75px;
-  //height: 80vh;
-  // max-width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  //justify-content: center;
-  //align-items: center;
   margin: 0 auto;
-  // margin-bottom: 0;
   width: 100%;
-}
-
-.comingSoon {
-  // margin: 20px 10%;
-  margin-top: 4.5rem;
-  display: flex;
-  // width: 100%;
-  // height: 5rem;
-  // padding: 0 20px 25px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  background-color: whitesmoke;
-  position: relative;
-  box-shadow: 2px 2px 2px lightgrey;
-  justify-content: space-evenly;
-  align-items: center;
-
-  .features1 {
-    margin-top: 40px;
-  }
-
-  .features2 {
-    margin-top: 45px;
-  }
 }
 
 h2 {
@@ -108,7 +78,6 @@ h2 {
   box-shadow: 2px 2px 2px lightgrey;
   margin-bottom: 1px;
   margin: 0 auto;
-  //width: 100%;
 
   .cardFront {
     display: none;
@@ -125,24 +94,6 @@ h2 {
   .cardBack-flipped {
     display: none;
   }
-
-  // .cardFront .info {
-  //   display: none;
-  //   padding: 5px 20px;
-
-  //   .pokeImg {
-  //     border-radius: 5px 5px 0 0;
-  //   }
-  // }
-  //  .info .flipped {
-  //     .cardFront .info {
-  //       display: block;
-  //     }
-
-  //     .cardBack {
-  //       display: none;
-  //     }
-  //   }
 }
 
 .card {
@@ -159,42 +110,11 @@ h2 {
   }
 }
 
-// .card .flipped {
-//   .info {
-//     display: block;
-//   }
-
-//   .cardBack {
-//     display: none;
-//   }
-// }
-
 .banner {
   height: 155px;
   background-image: url("../FeaturesAssets/trainer_banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-footer {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: @brown;
-  max-width: 100%;
-  padding-top: 2px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px lightgrey;
-  height: 30px;
-  //position: absolute;
-  bottom: 0;
-  justify-content: space-evenly;
-  align-items: center;
-
-  li {
-    list-style-type: none;
-    font-family: 'Open Sans', sans-serif;
-  }
 }
 
 @media @tablet {
@@ -222,19 +142,6 @@ footer {
     background-image: url("../FeaturesAssets/trainer_banner_tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
-    // .bannerImages {
-    //   .imgBanner {
-    //     display: none;
-    //   }
-
-    //   .imgBannerMob {
-    //     display: none;
-    //   }
-
-    //   .imgBannerTab {
-    //     display: flex;
-    //   }
-    // }
   }
 }
 
@@ -275,38 +182,4 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+} 

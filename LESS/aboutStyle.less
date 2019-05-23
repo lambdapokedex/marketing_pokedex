@@ -356,11 +356,10 @@ p {
   justify-content: space-around;
   align-items: center;
 
-  @media @phone{
+  @media @phone {
     flex-direction: column;
   }
 }
-
 
 .strategy {
   display: flex;
@@ -437,26 +436,6 @@ p {
   width: 40%;
 }
 
-footer {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: @brown;
-  max-width: 100%;
-  padding-top: 2px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px lightgrey;
-  height: 30px;
-  //position: absolute;
-  bottom: 0;
-  justify-content: space-evenly;
-  align-items: center;
-
-  li {
-    list-style-type: none;
-    font-family: "Open Sans", sans-serif;
-  }
-}
 
 .bottomsection {
   display: flex;
@@ -488,21 +467,6 @@ footer {
   background-size: cover;
 }
 
-footer {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: @brown;
-  max-width: 100%;
-  padding-top: 2px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px lightgrey;
-  height: 30px;
-  //position: absolute;
-  bottom: 0;
-  justify-content: space-evenly;
-  align-items: center;}
-
 // .page {
 //   display: flex;
 //   flex-direction: column;
@@ -510,30 +474,6 @@ footer {
 //   width: 100%;
 //   height: 100%;
 // }
-
-.comingSoon {
-  // margin: 20px 10%;
-  margin-top: 4.5rem;
-  display: flex;
-  // width: 100%;
-  // height: 5rem;
-  // padding: 0 20px 25px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  background-color: whitesmoke;
-  position: relative;
-  box-shadow: 2px 2px 2px lightgrey;
-  justify-content: space-evenly;
-  align-items: center;
-
-  .features1 {
-    margin-top: 40px;
-  }
-
-  .features2 {
-    margin-top: 45px;
-  }
-}
 
 .banner {
   height: 155px;
@@ -573,21 +513,23 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
   }
-}/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+} /* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
+  padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #BB1333; 
+input[type="submit"] {
+  background-color: #bb1333;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -596,7 +538,7 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: @brown;
 }
 
@@ -606,5 +548,3 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
-
