@@ -84,8 +84,10 @@ h2 {
     margin-top: 15px;
 
     li {
-      font-size: 0.8rem;
       list-style-type: none;
+      font-family: 'Open Sans', sans-serif;
+
+      font-size: 1.5rem;
     }
   }
 
@@ -107,6 +109,40 @@ h2 {
   margin-bottom: 1px;
   margin: 0 auto;
   //width: 100%;
+
+  .cardFront {
+    display: none;
+  }
+
+  .cardFront-flipped {
+    display: block;
+  }
+
+  .cardBack {
+    display: block;
+  }
+
+  .cardBack-flipped {
+    display: none;
+  }
+
+  // .cardFront .info {
+  //   display: none;
+  //   padding: 5px 20px;
+
+  //   .pokeImg {
+  //     border-radius: 5px 5px 0 0;
+  //   }
+  // }
+  //  .info .flipped {
+  //     .cardFront .info {
+  //       display: block;
+  //     }
+
+  //     .cardBack {
+  //       display: none;
+  //     }
+  //   }
 }
 
 .card {
@@ -118,38 +154,24 @@ h2 {
   transition: 0.3s;
   border-radius: 5px;
 
-  .pokeImg {
-    display: none;
-    border-radius: 5px 5px 0 0;
-  }
-
   :hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
-
-  .info {
-    display: none;
-    padding: 5px 20px;
-  }
 }
 
-.flipped {
-  .pokeImg {
-    display: block;
-  }
+// .card .flipped {
+//   .info {
+//     display: block;
+//   }
 
-  .info {
-    display: block;
-  }
-
-  .cardBack {
-    display: none;
-  }
-}
+//   .cardBack {
+//     display: none;
+//   }
+// }
 
 .banner {
   height: 155px;
-  background-image: url('../FeaturesAssets/trainer_banner.png');
+  background-image: url("../FeaturesAssets/trainer_banner.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -171,6 +193,7 @@ footer {
 
   li {
     list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 
@@ -196,9 +219,9 @@ footer {
   }
   .banner {
     height: 109px;
-  background-image: url('../FeaturesAssets/trainer_banner_tablet.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("../FeaturesAssets/trainer_banner_tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     // .bannerImages {
     //   .imgBanner {
     //     display: none;
@@ -248,10 +271,9 @@ footer {
   }
   .banner {
     height: 62px;
-  background-image: url('../FeaturesAssets/trainer_banner_mobile.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-   
+    background-image: url("../FeaturesAssets/trainer_banner_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

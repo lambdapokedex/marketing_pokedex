@@ -19,7 +19,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -152,46 +151,45 @@ p {
   line-height: 1.4;
 }
 
-:root{
+:root {
   font-size: 62.5%;
 }
-  body {
-    // background-image: url("../Img/background.png");
-    //   -webkit-background-size: cover;
-    //   -moz-background-size: cover;
-    //   -o-background-size: cover;
-    //   background-size: cover;
-    //   background-size: 100%;
-    background-color: white;
-    }
-  
-  .pics{
-    display: flex;
-      -webkit-transform: scale(0.65); /* Saf3.1+, Chrome */
-         -moz-transform: scale(0.65); /* FF3.5+ */
-          -ms-transform: scale(0.65); /* IE9 */
-           -o-transform: scale(0.65); /* Opera 10.5+ */
-              transform: scale(0.65);
-                 /* IE6–IE9 */
-                 filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+body {
+  // background-image: url("../Img/background.png");
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -o-background-size: cover;
+  //   background-size: cover;
+  //   background-size: 100%;
+  background-color: white;
+}
 
- 
-    @media @phone {
-      #pic1 {
-        display: none;
-      }
-      #pic3 {
-        display: none;
-      }
-    }     
-    // @media @tablet {
-    //   #pic1 {
-    //     display: none;
-    //   }    
-    // }
+.pics {
+  display: flex;
+  -webkit-transform: scale(0.65); /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.65); /* FF3.5+ */
+  -ms-transform: scale(0.65); /* IE9 */
+  -o-transform: scale(0.65); /* Opera 10.5+ */
+  transform: scale(0.65);
+  /* IE6–IE9 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+
+  @media @phone {
+    #pic1 {
+      display: none;
+    }
+    #pic3 {
+      display: none;
+    }
   }
+  // @media @tablet {
+  //   #pic1 {
+  //     display: none;
+  //   }
+  // }
+}
 #titlepic {
-height: 80%;
+  height: 80%;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -199,69 +197,148 @@ height: 80%;
  License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-content: '';
-content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-border-collapse: collapse;
-border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-}
+// html, body {
+//   height: 100%;
+//   font-family: 'Roboto', sans-serif;
+// }
 
-h1, h2, h3, h4, h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-family: 'Rubik', sans-serif;
-}
+// h1, h2, h3, h4, h5 {
+//   font-size: 18px;
+//   margin-bottom: 15px;
+//   font-family: 'Rubik', sans-serif;
+// }
 
 p {
   line-height: 1.4;
 }
-
 
 .all-sections {
   margin: 0 auto;
@@ -272,7 +349,7 @@ p {
   align-items: center;
 }
 
-.authors{
+.authors {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -304,7 +381,7 @@ p {
     //margin-left: 10px;
   }
   @media @tablet {
-   // margin-left: 10px;
+    // margin-left: 10px;
   }
 }
 
@@ -331,32 +408,32 @@ button {
   background-color: @red;
 }
 
-.dash{
+.dash {
   border: 0 none;
   border-top: 2px dashed #322f32;
   background: none;
-  height:0;
-} 
+  height: 0;
+}
 
 #testpic {
-//width: 65%;
+  //width: 65%;
   //max-height: 275px;
-  border:5px solid @red;
+  border: 5px solid @red;
 }
 
-h1{
-font-family: 'Abel', sans-serif;
-font-size: 35px;
-// width: 40%;
+h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 35px;
+  // width: 40%;
 
-@media @phone {
-  font-size: 30px;
-}
+  @media @phone {
+    font-size: 30px;
+  }
 }
 
-p{
+p {
   font-size: 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 40%;
 }
 
@@ -377,6 +454,7 @@ footer {
 
   li {
     list-style-type: none;
+    font-family: "Open Sans", sans-serif;
   }
 }
 
@@ -395,7 +473,7 @@ footer {
   padding: 10px;
 
   h2 {
-    font-family: 'Abel', sans-serif;
+    font-family: "Abel", sans-serif;
     font-size: 2rem;
   }
 }
@@ -471,7 +549,6 @@ footer {
     }
   }
 
-
   .banner {
     height: 109px;
     background-image: url("../FeaturesAssets/trainer_banner_tablet.png");
@@ -510,7 +587,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #BB1333; 
   color: white;
   padding: 12px 20px;
   border: none;
@@ -520,7 +597,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: @brown;
 }
 
 /* Add a background color and some padding around the form */

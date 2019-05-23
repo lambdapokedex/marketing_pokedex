@@ -201,8 +201,9 @@ h2 {
   margin-top: 15px;
 }
 .pokeDex .featureCard li {
-  font-size: 0.8rem;
   list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
 }
 .cards {
   display: flex;
@@ -219,6 +220,18 @@ h2 {
   margin-bottom: 1px;
   margin: 0 auto;
 }
+.cards .cardFront {
+  display: none;
+}
+.cards .cardFront-flipped {
+  display: block;
+}
+.cards .cardBack {
+  display: block;
+}
+.cards .cardBack-flipped {
+  display: none;
+}
 .card {
   display: flex;
   flex-flow: column wrap;
@@ -228,29 +241,12 @@ h2 {
   transition: 0.3s;
   border-radius: 5px;
 }
-.card .pokeImg {
-  display: none;
-  border-radius: 5px 5px 0 0;
-}
 .card :hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.card .info {
-  display: none;
-  padding: 5px 20px;
-}
-.flipped .pokeImg {
-  display: block;
-}
-.flipped .info {
-  display: block;
-}
-.flipped .cardBack {
-  display: none;
-}
 .banner {
   height: 155px;
-  background-image: url('../FeaturesAssets/trainer_banner.png');
+  background-image: url("../FeaturesAssets/trainer_banner.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -270,6 +266,7 @@ footer {
 }
 footer li {
   list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 880px) {
   .comingSoon .features1 {
@@ -286,7 +283,7 @@ footer li {
   }
   .banner {
     height: 109px;
-    background-image: url('../FeaturesAssets/trainer_banner_tablet.png');
+    background-image: url("../FeaturesAssets/trainer_banner_tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -315,7 +312,7 @@ footer li {
   }
   .banner {
     height: 62px;
-    background-image: url('../FeaturesAssets/trainer_banner_mobile.png');
+    background-image: url("../FeaturesAssets/trainer_banner_mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
