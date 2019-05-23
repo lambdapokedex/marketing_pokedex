@@ -1,8 +1,10 @@
+// Functionality for Demo Section of Features page
+// Flip over one Pokedex card at a time to reveal Pokemon Stats
+
 class Card {
   constructor(card) {
     this.card = card;
     console.log(this.card);
-    //this.card.addEventListener("click", () => this.flip());
     this.infoNum = document.querySelector(
       `.card[data-tab='${this.card.dataset.tab}']`
     );
