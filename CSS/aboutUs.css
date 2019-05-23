@@ -523,7 +523,7 @@ footer {
   background-color: #463232;
   max-width: 100%;
   padding-top: 2px;
-  border: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
   border-radius: 2px;
   box-shadow: 2px 2px 2px lightgrey;
   height: 30px;
@@ -532,6 +532,7 @@ footer {
   align-items: center;
 }
 footer li {
+  color: white;
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
 }
@@ -624,7 +625,7 @@ footer {
   }
 }
 /* Style inputs with type="text", select elements and textareas */
-input[type=text],
+input[type="text"],
 select,
 textarea {
   width: 100%;
@@ -641,11 +642,12 @@ textarea {
   /* Add a top margin */
   margin-bottom: 16px;
   /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #BB1333;
+input[type="submit"] {
+  background-color: #bb1333;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -653,7 +655,7 @@ input[type=submit] {
   cursor: pointer;
 }
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #463232;
 }
 /* Add a background color and some padding around the form */

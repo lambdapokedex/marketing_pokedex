@@ -256,7 +256,7 @@ footer {
   background-color: #463232;
   max-width: 100%;
   padding-top: 2px;
-  border: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
   border-radius: 2px;
   box-shadow: 2px 2px 2px lightgrey;
   height: 30px;
@@ -265,8 +265,9 @@ footer {
   align-items: center;
 }
 footer li {
+  color: white;
   list-style-type: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 880px) {
   .comingSoon .features1 {
