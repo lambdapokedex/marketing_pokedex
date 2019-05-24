@@ -155,189 +155,12 @@ p {
   font-size: 62.5%;
 }
 body {
-  // background-image: url("../Img/background.png");
-  //   -webkit-background-size: cover;
-  //   -moz-background-size: cover;
-  //   -o-background-size: cover;
-  //   background-size: cover;
-  //   background-size: 100%;
   background-color: white;
 }
 
-.pics {
-  display: flex;
-  -webkit-transform: scale(0.65); /* Saf3.1+, Chrome */
-  -moz-transform: scale(0.65); /* FF3.5+ */
-  -ms-transform: scale(0.65); /* IE9 */
-  -o-transform: scale(0.65); /* Opera 10.5+ */
-  transform: scale(0.65);
-  /* IE6–IE9 */
-  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
 
-  @media @phone {
-    #pic1 {
-      display: none;
-    }
-    #pic3 {
-      display: none;
-    }
-  }
-  // @media @tablet {
-  //   #pic1 {
-  //     display: none;
-  //   }
-  // }
-}
 #titlepic {
   height: 80%;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
- v2.0 | 20110126
- License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-// html, body {
-//   height: 100%;
-//   font-family: 'Roboto', sans-serif;
-// }
-
-// h1, h2, h3, h4, h5 {
-//   font-size: 18px;
-//   margin-bottom: 15px;
-//   font-family: 'Rubik', sans-serif;
-// }
-
-p {
-  line-height: 1.4;
 }
 
 .all-sections {
@@ -368,19 +191,10 @@ p {
   order: 1;
   flex-grow: 1;
   flex-direction: column;
-  //width: 48%;
-  //margin-left: 25px;
 
   img {
     width: 350px;
     height: 350px;
-  }
-
-  @media @phone {
-    //margin-left: 10px;
-  }
-  @media @tablet {
-    // margin-left: 10px;
   }
 }
 
@@ -390,7 +204,6 @@ p {
   flex-grow: 1;
   flex-direction: column;
   justify-content: center;
-  //width: 48%;
   align-items: center;
 
   img {
@@ -400,9 +213,8 @@ p {
 }
 
 button {
-  font-size: 18px;
+  font-size: 1.5em;
   width: 350px;
-  // border-radius: 12px;
   border: 2px solid black;
   background-color: @red;
 }
@@ -415,15 +227,12 @@ button {
 }
 
 #testpic {
-  //width: 65%;
-  //max-height: 275px;
   border: 5px solid @red;
 }
 
 h1 {
   font-family: "Abel", sans-serif;
-  font-size: 35px;
-  // width: 40%;
+  font-size: 2.5em;
 
   @media @phone {
     font-size: 30px;
@@ -431,7 +240,7 @@ h1 {
 }
 
 p {
-  font-size: 25px;
+  font-size: 2.5em;
   font-family: "Open Sans", sans-serif;
   width: 40%;
 }
@@ -446,7 +255,6 @@ p {
   width: 100%;
   background: whitesmoke;
   box-shadow: 2px 2px 2px lightgrey;
-  // margin: 0 0 0 50px;
   margin: 20px 0 10px 50pxgi;
   margin: 0 auto;
   padding: 10px;
@@ -466,14 +274,6 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-// .page {
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-//   width: 100%;
-//   height: 100%;
-// }
 
 .banner {
   height: 155px;
@@ -513,21 +313,21 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
   }
-} /* Style inputs with type="text", select elements and textareas */
+} 
 input[type="text"],
 select,
 textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical; 
 }
 
-/* Style the submit button with a specific background color etc */
+
 input[type="submit"] {
   background-color: #bb1333;
   color: white;
@@ -537,12 +337,12 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type="submit"]:hover {
   background-color: @brown;
 }
 
-/* Add a background color and some padding around the form */
+
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
