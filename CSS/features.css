@@ -233,7 +233,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (max-width: 880px) {
+@media (max-width: 905px) {
   .comingSoon .features1 {
     display: none;
   }
